@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import './App.css'
+// import Counter from './components/Counter';
+import Home from './components/Home'
+import Example from './components/Hooks'
+import SignUp from './components/SignUp';
+import Login from './components/Login';
+
+
+
 
 function App() {
+  // const [count, setCount] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     <div className='App'>
+      <SignUp />
+       <Login />
+      <Example/>
+      <Home/>
+      
+
+      
+            
+     </div>
+    </>
+  )
 }
 
-export default App;
+export default App
+
