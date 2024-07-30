@@ -8,42 +8,42 @@ const Home = () => {
             name: 'InstagramLikes',
             image: process.env.PUBLIC_URL + '/Black.png',
             description: 'This is a sample product description for InstagramLikes',
-            price: 29.99,
+            price: <span>29.99</span>,
             quantity: 5,
         },
         {
             name: 'Digital Watches',
             image: process.env.PUBLIC_URL + '/ayo.png',
             description: 'This is a sample product description for Digital Watches',
-            price: 19.99,
+            price: <span>199.99</span>,
             quantity: 10,
         },
         {
             name: 'HeadSets',
             image: process.env.PUBLIC_URL + '/blue.png',
             description: 'This is a sample product description for HeadSets',
-            price: 9.99,
+            price: <span>9.99</span>,
             quantity: 15,
         },
         {
             name: 'InstagramLikes',
             image: process.env.PUBLIC_URL + '/Black.png',
             description: 'This is a sample product description for InstagramLikes',
-            price: 29.99,
+            price: <span>189.99</span>,
             quantity: 5,
         },
         {
             name: 'Digital Watches',
             image: process.env.PUBLIC_URL + '/ayo.png',
             description: 'This is a sample product description for Digital Watches',
-            price: 19.99,
+            price: <span>299.99</span>,
             quantity: 10,
         },
         {
             name: 'HeadSets',
             image: process.env.PUBLIC_URL + '/blue.png',
             description: 'This is a sample product description for HeadSets',
-            price: 9.99,
+            price: <span>49.99</span>,
             quantity: 15,
         }
        
@@ -52,7 +52,7 @@ const Home = () => {
 
     return (
         <div className="App">
-            <h1>Product List</h1>
+            <h1 style={{margin:'7rem'}}>Product List</h1>
             <div className="products-container">
                 {products.map((product, index) => (
                     <Product

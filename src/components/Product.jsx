@@ -9,10 +9,10 @@ const Product = ({ name, image, description, price, quantity }) => (
         <div className="product-info">
             <h3>{name}</h3>
             <p>{description}</p>
-            <p>Price: ${price}</p>
+            <p><span>Price: $</span>{price}</p>
             <p>Available Quantity: {quantity}</p>
         <Counter />
-            <button className="buy-button">Buy Now</button>
+            <button className="buy-button"><a href="#">Buy Now</a></button>
         </div>
     </div>
 );

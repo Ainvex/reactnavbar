@@ -1,34 +1,31 @@
-
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-// import Counter from './components/Counter';
-import Home from './components/Home'
-import Example from './components/Hooks'
+// App.js
+import './App.css';
+import Home from './components/Home';
+import Example from './components/Hooks';
 import SignUp from './components/SignUp';
 import Login from './components/Login';
-
-
-
+import React from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-     <div className='App'>
-      <SignUp />
-       <Login />
-      <Example/>
-      <Home/>
-      
-
-      
-            
-     </div>
+      <div className='App'>
+        <Navbar />
+        <div className='container'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/example" element={<Example />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </div>
+      </div>
+        <Footer/>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
